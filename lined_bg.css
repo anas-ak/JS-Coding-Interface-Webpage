@@ -1,0 +1,20 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #0e0e0e;
+}
+body:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1000;
+  background: repeating-linear-gradient(0deg, #111 0px, #111 1px, transparent 2px, transparent 5px);
+  background-size: 100% 5px;
+  -webkit-animation: lines 2s ease-out infinite;
+          animation: lines 2s ease-out infinite;
+  opacity: 0.3;
+  mix-blend-mode: color-burn;
+  pointer-events: none;
+}
